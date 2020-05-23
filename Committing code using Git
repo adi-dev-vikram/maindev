@@ -1,0 +1,20 @@
+First we need to make sure we are on the right branch
+To checkout branch:
+--->git checkout branchname
+
+Then we perform our changes and follow these steps:
+
+1.) Checking all the modified and untacked files --> git status or git status | grep modi
+Staging the files to be commited --> git add filename
+
+2.) commiting staged files --> git commit -m "commit msg"
+
+3.) Pushing file to your branch-->git push
+
+4.) Then raise pull request and merge upon approval.
+
+5.) checking git logs--> git log
+
+In case you commited wrong files it better to revert the commit using soft reset.
+
+
