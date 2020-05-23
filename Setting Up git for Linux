@@ -13,3 +13,6 @@ Once these steps are done we need to make sure /etc/hosts and /etc/resolv.conf a
 Checking out code or Cloning repo:
 git clone "provide-url" master
 
+After this your code is checked out and you can start editing.
+
+you can use any editor of your choic but i recommend using Vscode as it has very easy to use source control features
