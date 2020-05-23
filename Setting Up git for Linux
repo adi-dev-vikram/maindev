@@ -1,0 +1,15 @@
+Install git on your linux machines
+--> sudo apt-get install git ( debian )
+--> sudo yum install git ( RHEL)
+Install ssh packages
+sudo apt-get install openssh-server
+create pair of public and private keys:
+ssh-keygen -t rsa or just ssh-keygen
+Enter passphrase for these or just save them. These are saved in home dir for current user.
+Use cat ~/.ssh/id_rsa.pub to view the public key. Then past it in the host server.
+
+Once these steps are done we need to make sure /etc/hosts and /etc/resolv.conf are edited and resolve to the IPs.
+
+Checking out code or Cloning repo:
+git clone "provide-url" master
+
