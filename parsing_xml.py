@@ -1,11 +1,11 @@
-#python script to parse the NotarizationStatus.xml and get status of notarization request and also to get Notarization logs.
+#python script to parse the xml and get status of request using requests lib
 
 from xml.dom import minidom
 import requests
 import os.path
 from os import path
 
-if (path.exists('NotarizationStatus.xml')):
+if (path.exists('FileName.xml')):
     print("Notarization Status xml file exists at the given location")
 else:
     print("File doesnt exist")
