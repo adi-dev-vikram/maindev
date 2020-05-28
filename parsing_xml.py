@@ -10,14 +10,14 @@ if (path.exists('NotarizationStatus.xml')):
 else:
     print("File doesnt exist")
 
-xmldoc = minidom.parse('NotarizationStatus.xml')
+xmldoc = minidom.parse('NameOfFile.xml')
 itemlist = xmldoc.getElementsByTagName('key')
-if itemlist[0].firstChild.nodeValue == "notarization-info":
+if itemlist[0].firstChild.nodeValue == "tag_name":
     stringval = xmldoc.getElementsByTagName('string')
     print(stringval[0].firstChild.nodeValue)
     response = requests.get(stringval[0].firstChild.nodeValue)
     response.json()
-    with open('NotarizationLogs.txt', mode = 'wb') as file:
+    with open('Filetowrite.txt', mode = 'wb') as file:
         file.write(response.content)
         response.json()
 
@@ -27,6 +27,6 @@ if itemlist[0].firstChild.nodeValue == "notarization-info":
     elif stringval[2].firstChild.nodeValue == 'in progress':
         print("processing...")
     else:
-        print("The Notarization request was successful. App/pkg is notarized")
+        print("The request was successful.")
 else:
-    print("Notarization request was incorrect")
+    print(" Request was incorrect")
