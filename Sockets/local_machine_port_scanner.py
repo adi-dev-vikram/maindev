@@ -1,4 +1,4 @@
-
+#!/usr/bin/env python
 
 import socket
 ip ='127.0.0.1'
