@@ -56,43 +56,6 @@ int main()
     
     
     // use auto to deduce variables
-    
-    // auto ite = numbers.begin()
-    // useful for complex objects
-    
-    
-// Read Key-value pairs from config files
-// For example: AuthServers=<IP>
-    
-    std::ifstream fs;
-    fs.open("/Volumes/Data/Codebase/TestApp/agent.conf");
-    if(fs.good())
-    {
-        printf("\nFile is there!");
-    }
-    else{
-        printf("aditya");
-    }
-    std::map<std::string, std::string> ConfigInfo;
-
-    std::string line;
-    while (std::getline(fs, line))
-    {
-        std::istringstream is_line(line);
-        std::string key;
-        if (std::getline(is_line, key, '='))
-        {
-            std::string value;
-            if (key[0] == '#')
-                continue;
-            
-            if (std::getline(is_line, value))
-            {
-                ConfigInfo[key] = value;
-                   cout <<  " The IP is: " << ConfigInfo[key] << endl;
-            }
-        }
-    }
- 
     return 0;
+    
 }
